@@ -9,3 +9,5 @@ Route::get('/user', function (Request $request) {
 
 Route::get('events', [EventController::class, 'getEvent']);
 Route::post('events', [EventController::class, 'storeEvent']);
+Route::delete('events/{id}', [EventController::class, 'destroyEvent']);
+Route::put('events', [EventController::class, 'putEvent']);
